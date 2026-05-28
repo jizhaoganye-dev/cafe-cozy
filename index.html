@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="都会の喧騒を忘れる、木漏れ日と自家焙煎コーヒーの隠れ家カフェ『CAFÉ COZY』の公式サイト。厳選したシングルオリジン豆を使用したコーヒーと心地よい時間を提供します。">
+    <meta name="robots" content="index, follow">
+    <title>CAFÉ COZY | 都会の喧騒を忘れる自家焙煎コーヒーの隠れ家カフェ</title>
+    <!-- Google Fonts: Noto Serif JP, Noto Sans JP, and Playfair Display (for numbers/eng) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">CAFÉ COZY</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#concept" class="nav-link">Concept</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#access" class="nav-link">Access</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-accent btn-sm header-cta">LINEで予約する</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="#concept" class="mobile-nav-link">Concept</a></li>
+            <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+            <li><a href="#access" class="mobile-nav-link">Access</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li><a href="#contact" class="mobile-nav-link btn btn-accent">LINEで予約する</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content fade-in">
+                    <span class="badge">URBAN ESCAPE</span>
+                    <h1 class="hero-title">
+                        一杯のコーヒーから、<br>
+                        特別な日常を。
+                    </h1>
+                    <p class="hero-description">
+                        CAFÉ COZYは、選び抜かれたシングルオリジンの自家焙煎豆と、心地よいアナログレコードの音に包まれる大人のための隠れ家です。
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">Menuを見る</a>
+                        <a href="#access" class="btn btn-outline">Access</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="image-mask">
+                        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="自然光が入る木目調の店内と湯気立つコーヒー" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section id="concept" class="section concept-section">
+            <div class="container concept-container">
+                <div class="concept-visual fade-in">
+                    <div class="image-mask">
+                        <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="コーヒー豆を焙煎するプロのバリスタの手元" class="concept-img">
+                    </div>
+                </div>
+                <div class="concept-content fade-in">
+                    <span class="section-subtitle">01. OUR ESSENCE</span>
+                    <h2 class="section-title">
+                        五感で味わう、<br>
+                        豊かな時間と木漏れ日
+                    </h2>
+                    <p class="section-text">
+                        世界中から厳選したシングルオリジン（単一農園）の豆のみを使用しています。
+                    </p>
+                    <p class="section-text">
+                        店内で毎日丁寧に焙煎される珈琲は、豆本来のフルーティーな香りと深いコクを引き出します。ヴィンテージスピーカーから流れる心地よいジャズとともに、至高の一杯をお楽しみください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section menu-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-subtitle">02. RECOMMENDED MENU</span>
+                    <h2 class="section-title">こだわりの自家焙煎と自家製スイーツ</h2>
+                </div>
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card fade-in">
+                        <div class="image-mask menu-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1587955245893-389f2215c6eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="ハンドドリップコーヒー" class="menu-img">
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-item-title">ハンドドリップコーヒー</h3>
+                            <span class="menu-item-price">¥650</span>
+                            <p class="menu-item-desc">ベリーのような華やかな香りと、爽やかな酸味が特徴の一杯。</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-card fade-in">
+                        <div class="image-mask menu-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1593443320739-77f74939d0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="自家製エスプレッソ・ラテ" class="menu-img">
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-item-title">自家製エスプレッソ・ラテ</h3>
+                            <span class="menu-item-price">¥700</span>
+                            <p class="menu-item-desc">濃厚なエスプレッソに、きめ細やかなスチームミルクを注いだ至福のラテ。</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-card fade-in">
+                        <div class="image-mask menu-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1615235739538-95040f341ba8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="こだわり卵のクラシックプリン" class="menu-img">
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-item-title">こだわり卵のクラシックプリン</h3>
+                            <span class="menu-item-price">¥600</span>
+                            <p class="menu-item-desc">ほろ苦いカラメルと、しっかりとした食感が珈琲に絶妙にマッチします。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Section -->
+        <section id="access" class="section access-section">
+            <div class="container access-container">
+                <div class="access-info fade-in">
+                    <span class="section-subtitle">03. STORE INFORMATION</span>
+                    <h2 class="section-title">アクセス・店舗情報</h2>
+                    <dl class="access-list">
+                        <div class="access-item">
+                            <dt>住所</dt>
+                            <dd>〒130-0045 東京都墨田区押上1丁目1-2<br>（押上駅 B3出口より徒歩3分）</dd>
+                        </div>
+                        <div class="access-item">
+                            <dt>営業時間</dt>
+                            <dd>11:00 - 19:00（L.O. 18:30）</dd>
+                        </div>
+                        <div class="access-item">
+                            <dt>定休日</dt>
+                            <dd>水曜日</dd>
+                        </div>
+                        <div class="access-item">
+                            <dt>設備</dt>
+                            <dd>席数20席（電源・無料Wi-Fi完備、全席禁煙）</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="access-map fade-in">
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.532926991089!2d139.8099!3d35.7101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z5p2x5Lqs6YO96aOo55Sw5Yy65oq85LiKMeS4geebru-8kemHjeW6lSDmnb7kuInjgr3jg6njg57jg4Hjgrfjg4bjgr8!5e0!3m2!1sja!2sjp!4v1716812802000!5m2!1sja!2sjp" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="CAFÉ COZYのマップ">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-subtitle">04. RESERVE & INQUIRY</span>
+                    <h2 class="section-title">ご予約・お問い合わせ</h2>
+                </div>
+                <div class="contact-grid">
+                    <!-- LINE Section -->
+                    <div class="line-card fade-in">
+                        <h3 class="line-title">LINE公式アカウントから<br>簡単お席予約</h3>
+                        <p class="line-desc">
+                            友だち追加限定で、初回ご来店時に使える『自家焙煎ドリップバッグ』プレゼントクーポンを配布しています。
+                        </p>
+                        <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-full">
+                            <!-- LINE Icon Placeholder -->
+                            <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 5.58 2 10c0 2.9 1.84 5.43 4.6 6.8-.18.63-.65 2.27-.75 2.62-.12.43.14.43.3.33.12-.08 1.95-1.32 2.73-1.85A11.35 11.35 0 0012 18c5.52 0 10-3.58 10-8s-4.48-8-10-8z"></path>
+                            </svg>
+                            LINEで友だち追加する
+                        </a>
+                    </div>
+                    <!-- Form Section -->
+                    <div class="form-card fade-in">
+                        <form class="contact-form" id="cafe-contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">お名前</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="山田 太郎" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">メールアドレス</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">お問い合わせ内容</label>
+                                <textarea id="message" name="message" rows="5" class="form-input" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">この内容で送信する</button>
+                        </form>
+                        <div class="form-success" id="form-success" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h3>送信が完了しました</h3>
+                            <p>お問い合わせいただきありがとうございます。内容を確認後、2営業日以内にご連絡いたします。</p>
+                            <button class="btn btn-outline btn-sm" id="reset-form">フォームに戻る</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <a href="#" class="footer-logo">CAFÉ COZY</a>
+                <div class="footer-sns">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="sns-link">Instagram</a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="sns-link">X (Twitter)</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 CAFÉ COZY. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">特定商取引法に基づく表記</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
