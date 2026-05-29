@@ -11,6 +11,96 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- ===== OGP / Twitter Card ===== -->
+    <meta property="og:type" content="restaurant.restaurant">
+    <meta property="og:title" content="CAFÉ COZY | 都会の喧騒を忘れる自家焙煎コーヒーの隠れ家カフェ">
+    <meta property="og:description" content="LINE連携・自動予約・AI検索最適化を完備した次世代の店舗DXショーケース。">
+    <meta property="og:image" content="https://jizhaoganye-dev.github.io/cafe-cozy/assets/images/ogp.jpg">
+    <meta property="og:url" content="https://jizhaoganye-dev.github.io/cafe-cozy/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ===== GEO: LocalBusiness JSON-LD ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "@id": "https://jizhaoganye-dev.github.io/cafe-cozy/#cafe",
+      "name": "CAFÉ COZY（カフェ・コージー）",
+      "alternateName": "カフェコージー",
+      "image": [
+        "https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      ],
+      "description": "都会の喧騒を忘れる、木漏れ日と自家焙煎コーヒーの隠れ家カフェ。世界中から厳選したシングルオリジン豆を毎日店内で焙煎。電源・無料Wi-Fi完備、押上駅B3出口より徒歩3分。",
+      "url": "https://jizhaoganye-dev.github.io/cafe-cozy/",
+      "telephone": "+81-3-0000-0000",
+      "priceRange": "￥1,000 - ￥2,000",
+      "currenciesAccepted": "JPY",
+      "paymentAccepted": "Cash, Credit Card, PayPay, LINE Pay, Suica",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "押上1丁目1-2",
+        "addressLocality": "墨田区",
+        "addressRegion": "東京都",
+        "postalCode": "130-0045",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.7101,
+        "longitude": 139.8107
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "11:00",
+          "closes": "19:00"
+        }
+      ],
+      "menu": "https://jizhaoganye-dev.github.io/cafe-cozy/#menu",
+      "acceptsReservations": "True",
+      "servesCuisine": ["Coffee","Dessert","Cafe"],
+      "amenityFeature": [
+        {"@type":"LocationFeatureSpecification","name":"Free Wi-Fi","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Power Outlets","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Non-smoking","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Single Origin Coffee","value":true}
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127"
+      },
+      "sameAs": [
+        "https://www.instagram.com/cafe_cozy_sample/",
+        "https://line.me/R/ti/p/@YOUR_LINE_ID"
+      ]
+    }
+    </script>
+
+    <!-- ===== GA4 計測タグ ===== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX-SAMPLE2026"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DX-SAMPLE2026', {
+        'page_title': 'CAFÉ COZY DX Portfolio',
+        'send_page_view': true
+      });
+    </script>
+
+    <!-- ===== Meta Pixel（Instagram広告用） ===== -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'META_PIXEL_ID_PLACEHOLDER');
+      fbq('track', 'PageView');
+    </script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -187,49 +277,82 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <span class="section-subtitle">04. RESERVE & INQUIRY</span>
-                    <h2 class="section-title">ご予約・お問い合わせ</h2>
-                </div>
-                <div class="contact-grid">
-                    <!-- LINE Section -->
-                    <div class="line-card fade-in">
-                        <h3 class="line-title">LINE公式アカウントから<br>簡単お席予約</h3>
-                        <p class="line-desc">
-                            友だち追加限定で、初回ご来店時に使える『自家焙煎ドリップバッグ』プレゼントクーポンを配布しています。
+        <section id="contact" class="section contact-section" style="background-color: #F5F1EB;">
+            <div class="container fade-in">
+                <span class="section-subtitle" style="color: #2E5A44;">04. RESERVE & INQUIRY</span>
+                <h2 class="section-title" style="margin-bottom: 64px;">ご予約・お問い合わせ</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start;">
+                    <!-- LINE & 予約ウィジェット -->
+                    <div style="background:#FDFBF7; padding:40px; border:1px solid #E0DCD5; border-radius: var(--border-radius);">
+                        <h3 style="font-family:'Noto Serif JP',serif; font-size:20px; color:#4A3728; margin-bottom:8px; font-weight:400; line-height: 1.4;">
+                            LINE公式アカウントから簡単お席予約
+                        </h3>
+                        <p style="font-size:13px; line-height:1.9; color:#7A6B5D; margin-bottom:24px;">
+                            24時間リアルタイムで席の確保が可能。友だち追加限定で『自家焙煎ドリップバッグ』プレゼントクーポンを配布中です。
                         </p>
-                        <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-full">
-                            <!-- LINE Icon Placeholder -->
-                            <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                <path d="M12 2C6.48 2 2 5.58 2 10c0 2.9 1.84 5.43 4.6 6.8-.18.63-.65 2.27-.75 2.62-.12.43.14.43.3.33.12-.08 1.95-1.32 2.73-1.85A11.35 11.35 0 0012 18c5.52 0 10-3.58 10-8s-4.48-8-10-8z"></path>
-                            </svg>
-                            LINEで友だち追加する
+
+                        <a href="https://line.me/R/ti/p/@YOUR_LINE_ID" 
+                           id="line-dx-btn"
+                           target="_blank" rel="noopener noreferrer"
+                           style="display:block; text-align:center; background:#2E5A44; color:#FDFBF7; padding:18px; text-decoration:none; font-family:'Noto Serif JP',serif; font-size:15px; letter-spacing:0.1em; margin-bottom:24px; transition:opacity 0.3s; border-radius: var(--border-radius);"
+                           onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                            LINEで友だち追加・即時予約する
                         </a>
+
+                        <!-- Square予約 iframe埋め込み枠 -->
+                        <div style="border-top:1px solid #E0DCD5; padding-top:24px;">
+                            <p style="font-size:12px; color:#7A6B5D; margin-bottom:12px; letter-spacing:0.1em;">
+                                ▼ リアルタイム空席状況（Square Appointments API同期）
+                            </p>
+                            <div id="booking-widget-container" style="background:#FDFBF7; border:1px solid #E0DCD5; border-radius: var(--border-radius); min-height:260px; display:flex; align-items:center; justify-content:center; flex-direction:column; padding:24px; text-align: center;">
+                                <!-- 本番では下記コメントを解除してSquareのブッキングURLを差し替える -->
+                                <!-- <iframe src="https://squareup.com/appointments/buyer/widget/YOUR_SITE_ID/YOUR_LOCATION_ID" style="width:100%; height:260px; border:none;"></iframe> -->
+                                <span style="font-family:'Noto Serif JP',serif; font-size:13px; color:#4A3728; letter-spacing:0.1em;">Square Appointments Widget</span>
+                                <span style="font-size:11px; color:#7A6B5D; margin-top:12px; line-height: 1.5;">本番接続時、リアルタイム空席カレンダーが表示されます</span>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Form Section -->
-                    <div class="form-card fade-in">
-                        <form class="contact-form" id="cafe-contact-form">
-                            <div class="form-group">
-                                <label for="name" class="form-label">お名前</label>
-                                <input type="text" id="name" name="name" class="form-input" placeholder="山田 太郎" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="form-label">メールアドレス</label>
-                                <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="form-label">お問い合わせ内容</label>
-                                <textarea id="message" name="message" rows="5" class="form-input" placeholder="お問い合わせ内容をご記入ください" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full">この内容で送信する</button>
-                        </form>
-                        <div class="form-success" id="form-success" style="display: none;">
-                            <div class="success-icon">✓</div>
-                            <h3>送信が完了しました</h3>
-                            <p>お問い合わせいただきありがとうございます。内容を確認後、2営業日以内にご連絡いたします。</p>
-                            <button class="btn btn-outline btn-sm" id="reset-form">フォームに戻る</button>
+
+                    <!-- お問い合わせフォーム -->
+                    <div style="background:#FDFBF7; padding:40px; border:1px solid #E0DCD5; border-radius: var(--border-radius); display: flex; flex-direction: column; justify-content: center; min-height: 554px;">
+                        <div id="dx-form-container" style="width: 100%;">
+                            <h3 style="font-family:'Noto Serif JP',serif; font-size:20px; color:#4A3728; margin-bottom:8px; font-weight:400; line-height: 1.4;">
+                                お問い合わせ・貸切相談
+                            </h3>
+                            <p style="font-size:13px; line-height:1.9; color:#7A6B5D; margin-bottom:24px;">
+                                送信内容は暗号化され、店舗のiPadへ即時通知されます（Webhook連携）。
+                            </p>
+
+                            <form id="dx-contact-form">
+                                <div style="margin-bottom:20px;">
+                                    <label style="display:block; font-size:11px; color:#4A3728; margin-bottom:8px; letter-spacing:0.15em; font-weight: 700;">お名前</label>
+                                    <input type="text" id="dx-name" required placeholder="山田 太郎"
+                                           style="width:100%; padding:14px; border:1px solid #E0DCD5; border-radius: var(--border-radius); background:#FDFBF7; font-family:'Noto Serif JP',serif; font-size:14px; color:#4A3728; box-sizing:border-box;">
+                                </div>
+                                <div style="margin-bottom:20px;">
+                                    <label style="display:block; font-size:11px; color:#4A3728; margin-bottom:8px; letter-spacing:0.15em; font-weight: 700;">メールアドレス</label>
+                                    <input type="email" id="dx-email" required placeholder="example@email.com"
+                                           style="width:100%; padding:14px; border:1px solid #E0DCD5; border-radius: var(--border-radius); background:#FDFBF7; font-family:'Noto Serif JP',serif; font-size:14px; color:#4A3728; box-sizing:border-box;">
+                                </div>
+                                <div style="margin-bottom:24px;">
+                                    <label style="display:block; font-size:11px; color:#4A3728; margin-bottom:8px; letter-spacing:0.15em; font-weight: 700;">お問い合わせ内容</label>
+                                    <textarea id="dx-message" rows="5" required placeholder="お問い合わせ内容をご記入ください"
+                                              style="width:100%; padding:14px; border:1px solid #E0DCD5; border-radius: var(--border-radius); background:#FDFBF7; font-family:'Noto Serif JP',serif; font-size:14px; color:#4A3728; box-sizing:border-box; resize:vertical;"></textarea>
+                                </div>
+                                <button type="submit" 
+                                        style="width:100%; background:#4A3728; color:#FDFBF7; padding:18px; border:none; border-radius: var(--border-radius); font-family:'Noto Serif JP',serif; font-size:15px; letter-spacing:0.1em; cursor:pointer; transition:opacity 0.3s; font-weight: 700;"
+                                        onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                                    送信する（自動暗号化）
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div class="form-success" id="dx-form-success" style="display: none; padding: 0; min-height: auto;">
+                            <div class="success-icon" style="margin-bottom: 20px;">✓</div>
+                            <h3 style="font-family:'Noto Serif JP',serif; font-size: 22px; margin-bottom: 12px;">送信が完了しました</h3>
+                            <p style="font-size: 14px; color: var(--color-muted); line-height: 1.8; margin-bottom: 24px; max-width: 320px;">送信内容は自動で暗号化され、店舗のiPadへ即時通知されました。内容を確認後、2営業日以内にご連絡いたします。</p>
+                            <button class="btn btn-outline btn-sm" id="reset-dx-form" style="width: auto;">フォームに戻る</button>
                         </div>
                     </div>
                 </div>
@@ -256,6 +379,30 @@
             </div>
         </div>
     </footer>
+
+    <!-- AI Concierge UI -->
+    <div id="ai-concierge-trigger" title="AIコンシェルジュに相談する">
+        <span class="ai-trigger-text">AI</span>
+    </div>
+
+    <div id="ai-chat-window" style="display: none;">
+        <div class="ai-chat-header">
+            <div class="ai-chat-title-group">
+                <span class="ai-title-main">CAFÉ COZY</span>
+                <span class="ai-title-sub">AI Concierge</span>
+            </div>
+            <button id="ai-chat-close" title="チャットを閉じる">✕</button>
+        </div>
+        <div id="ai-chat-body">
+            <div class="ai-message ai-message-bot">
+                いらっしゃいませ。CAFÉ COZYのAIコンシェルジュです。お席の空き状況、メニューのご相談、Wi-Fiや電源の有無など、何でもお気軽にお尋ねください。
+            </div>
+        </div>
+        <div class="ai-chat-footer">
+            <input type="text" id="ai-chat-input" placeholder="質問を入力してください..." autocomplete="off">
+            <button id="ai-chat-send">送信</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
