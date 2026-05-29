@@ -114,7 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // LINE Button Click Tracking
     const lineBtn = document.getElementById('line-dx-btn');
     if (lineBtn) {
-        lineBtn.addEventListener('click', () => {
+        lineBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // 404エラーページへの遷移を防ぐ
             if (typeof gtag === 'function') {
                 gtag('event', 'click_line_reserve', {
                     event_category: 'DX_LINE',
@@ -125,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 fbq('track', 'Contact', { method: 'LINE' });
             }
             console.log('[DX] LINE予約ボタンクリックイベント計測');
+            showDxToast('【デモ機能】本番環境では、ここから店舗のLINE公式アカウント（友だち追加・予約画面）へ遷移します。');
         });
     }
 
