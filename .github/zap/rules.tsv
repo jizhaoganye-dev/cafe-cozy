@@ -1,0 +1,3 @@
+# ZAP baseline scan rules file
+# http://zap/rules.tsv
+# Format: <ruleId> <IGNORE|FAIL|WARN|OUTOFCONTEXT> [comment]

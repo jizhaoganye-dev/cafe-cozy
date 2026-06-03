@@ -1,0 +1,33 @@
+name: "OWASP ZAP Web Security Scan"
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Run every Sunday at 00:00 UTC
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+jobs:
+  zap_scan:
+    name: OWASP ZAP Dynamic Attack Scan
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Run OWASP ZAP Baseline Security Scan
+      uses: zaproxy/action-baseline@v0.12.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        target: 'https://jizhaoganye-dev.github.io/cafe-cozy/'
+        rules_file_name: '.github/zap/rules.tsv'
+        fail_action: false # Do not fail the build, so report is always generated and saved
+        allow_issue_writing: true # Automatically create a GitHub Issue if vulnerabilities are found
+
+    - name: Archive ZAP HTML Scan Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: OWASP-ZAP-Scan-Report
+        path: |
+          report_html.html
+          report_xml.xml
+        retention-days: 90
