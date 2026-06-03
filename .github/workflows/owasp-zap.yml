@@ -9,6 +9,9 @@ jobs:
   zap_scan:
     name: OWASP ZAP Dynamic Attack Scan
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
 
     steps:
     - name: Checkout Code
